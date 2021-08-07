@@ -42,10 +42,8 @@
 
 ### 代码
 
-```java
+
 class Solution {
-
-
     public boolean circularArrayLoop(int[] nums) {
         int n = nums.length;
 
@@ -83,12 +81,7 @@ class Solution {
 
 }
 
-```
-
-```java
 class Solution {
-
-
     public boolean circularArrayLoop(int[] nums) {
         int n = nums.length;
 
@@ -132,7 +125,7 @@ class Solution {
     }
 
 }
-```
+
 
 ### 模拟解法：
 惭愧，这个没写出来，有点思路但是很乱，最后参考了三叶大佬的，并且三叶大佬的图算法没有看懂
@@ -142,7 +135,7 @@ class Solution {
 - k > 1：每次遍历的时候+1
 - 避免重复：利用抽屉原理
 ### 代码：
-```java
+
 class Solution {
     public boolean circularArrayLoop(int[] nums) {
         int n = nums.length;
@@ -177,4 +170,4 @@ class Solution {
         }
     }
 }
-```
+
