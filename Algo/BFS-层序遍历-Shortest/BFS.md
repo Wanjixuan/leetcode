@@ -21,6 +21,7 @@ public int BFS(Node start, Node target) {
     while (!q.isEmpty()) {
         int sz = q.size();
         /* 将当前队列中的所有节点向四周扩散 */
+        /* 这里的循环只是表明次数，所以不能用 q.size()，这种动态变化的变量
         for (int i = 0; i < sz; i++) {
             Node cur = q.poll();
             /* 划重点：这里判断是否到达终点 */
