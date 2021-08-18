@@ -50,3 +50,36 @@ class Solution {
     }
 }
 ```
+
+## 优化代码
+
+```java
+        // 与硬币问题有点类似
+        // min{到[i][j - 1]最短路径，[i - 1][j]}
+        int m = grid.length, n = grid[0].length;
+
+        int[] f = new int[n];
+        // 初始条件
+        f[0] = grid[0][0];
+        // 边界条件，可以做累加，
+
+        
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (i - 1 >= 0 && j - 1 >= 0) {
+                    f[j] = Math.min(f[j], f[j - 1]) + grid[i][j];
+                } 
+                //边界条件包括 横向和纵向，都需要处理
+                if (i == 0 && j - 1 >= 0) {
+                    // 第一行
+                    f[j] = f[j - 1] + grid[0][j];
+                }
+                if (j == 0 && i - 1 >= 0) {
+                    // 第一列
+                    f[j] = grid[i][0] + f[0];
+                }
+            }
+        }
+
+        return f[n - 1];
+```
