@@ -63,7 +63,7 @@
 
 这里介绍一个找最小值与次小值下标的方法  <br/>
 
-<img src="刷题教训.assets/image-20210819195317507.png" alt="image-20210819195317507" style="zoom:80%;" />
+![找最小值方法](https://github.com/Wanjixuan/leetcode/blob/main/Pic/Question/1289.png)
 
 
 
