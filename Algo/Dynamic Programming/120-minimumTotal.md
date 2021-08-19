@@ -4,7 +4,7 @@
 
 需要注意两个点
 
-![image-20210818203548093](刷题教训.assets/image-20210818203548093.png)
+![示意图](https://github.com/Wanjixuan/leetcode/blob/main/Pic/Question/120.png)
 
 - 每行的元素个数等于当前行数+1  ：` Len(j)  = i + 1`
 
