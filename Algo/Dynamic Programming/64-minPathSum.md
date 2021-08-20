@@ -113,6 +113,8 @@ class Solution {
                     int top  = i - 1 >= 0 ? f[i - 1][j] + grid[i][j] : Integer.MAX_VALUE;
                     int left = j - 1 >= 0 ? f[i][j - 1] + grid[i][j] : Integer.MAX_VALUE;
                     f[i][j] = Math.min(top, left);
+                    // 这里把当前行某个点最短路径的上一级路径存到当前行代表的一维数组中
+                    // 就是我代表一个下标，我这个下标里存的是上一级中让我到最短路径的那位下标
                     g[getIdx(i, j)] = top < left ? getIdx(i - 1, j) : getIdx(i, j - 1);
                 }
             }
@@ -146,6 +148,7 @@ class Solution {
 
 ```
 
+
 也许你会觉得「输出」方案的代码太麻烦了。
 
 这是因为我们找路径的过程是「倒着」找，而输出方案的时候则是「顺着」输出。
@@ -157,6 +160,9 @@ class Solution {
 这样我们就能实现「找路径」的顺序和「输出」顺序同向。
 
 调整定义 `f[i][j]`为从 `(m−1,n−1)` 开始到达位置`(i,j)`的最小总和。
+
+![一维到二维](https://github.com/Wanjixuan/leetcode/blob/main/Pic/Question/64-1.png)
+
 
 ```java
 class Solution {
@@ -199,6 +205,9 @@ class Solution {
 }
 
 ```
+
+- 上述存储倒序寻址的示意如下
+- ![寻址](https://github.com/Wanjixuan/leetcode/blob/main/Pic/Question/64-2.png)
 
 
 如果方块中「存在负权」，如何求解？ <br/>
