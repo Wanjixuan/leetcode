@@ -15,6 +15,12 @@
 
 
 
+简单示意（后续再补充动图）
+
+![初始化示意图](https://github.com/Wanjixuan/leetcode/blob/main/Pic/Question/443-1.png)
+
+
+
 ```java
     public int compress(char[] chars) {
         int n = chars.length;
