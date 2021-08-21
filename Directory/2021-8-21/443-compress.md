@@ -20,6 +20,12 @@
 ![初始化示意图](https://github.com/Wanjixuan/leetcode/blob/main/Pic/Question/443-1.png)
 
 
+![初始化示意图](https://github.com/Wanjixuan/leetcode/blob/main/Pic/Question/443-2.png)
+
+![流程示意图](https://github.com/Wanjixuan/leetcode/blob/main/Pic/Question/443.gif)
+
+
+
 
 ```java
     public int compress(char[] chars) {
