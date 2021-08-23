@@ -30,9 +30,9 @@
         for (int i : arr) ans = Math.max(ans, i);
         return ans;
     }
-    ```
+```
     
-    第二种分析：
+第二种分析：
     ```java
      public int getMaximumGenerated(int N) {
         if (N == 0) return 0;
