@@ -33,7 +33,7 @@
 ```
     
 第二种分析：
-    ```java
+```java
      public int getMaximumGenerated(int N) {
         if (N == 0) return 0;
         num[0] = 0;
