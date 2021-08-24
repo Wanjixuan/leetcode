@@ -242,3 +242,67 @@ Dijkstra算法：适用单源最短路径（有向、无向都行）**但是算�
 
     }
 ```
+
+## Floyd 算法
+
+![算法思路](https://github.com/Wanjixuan/leetcode/blob/main/Pic/Question/743-1.png)
+
+### 模板
+![算法模板](https://github.com/Wanjixuan/leetcode/blob/main/Pic/Question/743-2.png)
+
+
+### 代码
+```java
+
+class Solution {
+    // 之所以用INF / 2，因为后面会有与最大值得加法，会溢出
+    int INF = Integer.MAX_VALUE / 2;
+    int[][] D = new int[110][110];
+    int n, m;
+    public int networkDelayTime(int[][] times, int n1, int m1) {
+        
+        // D = new int[n][n];
+        n = n1;
+        m = m1;
+        // 初始化
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                D[i][j] = D[j][i] = i == j ? 0 : INF;
+     
+            }
+        }
+
+        // 存图
+        for (int[] arr : times) {
+            int start = arr[0] - 1, end = arr[1] - 1;
+            D[start][end] = arr[2];
+        }
+        floyd();
+
+        int ans = 0;
+        for (int i = 0; i < n; i++) {
+            ans = Math.max(ans, D[m - 1][i]);
+        }
+
+        return ans == INF ? -1 : ans;
+
+
+    }
+
+    public void floyd() {
+        
+        // 慢慢加入集合中点的个数
+        for (int k = 0; k < n; k++) {
+            // 在给定 k 个点的情况下，求出最短的距离！
+            // 如果有限的k，不能使距离从INF改变，那么还需要扩展，说明这堆k里，没有路径过去
+            // 如果能给的k都给完了，还没有从INF改变，那么说明就没有路径
+            for (int i = 0; i < n; i++) {
+                for (int j = 0; j < n; j++) {
+                    D[i][j] = Math.min(D[i][j], D[i][k] + D[k][j]);
+                }
+            }
+        }
+    }
+
+}
+```
