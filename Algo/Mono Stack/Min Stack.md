@@ -1,4 +1,4 @@
-[496. 下一个更大元素 I](https://leetcode-cn.com/problems/next-greater-element-i/)
+# [496. 下一个更大元素 I](https://leetcode-cn.com/problems/next-greater-element-i/)
 
 ## 思路
 现在 nums2里面，找好这种比自己大之类的条件，然后在nums[2]中找到nums[1]对应的**值**，取出。
@@ -64,7 +64,7 @@
 ```
 
 
-[503. 下一个更大元素 II](https://leetcode-cn.com/problems/next-greater-element-ii/)
+# [503. 下一个更大元素 II](https://leetcode-cn.com/problems/next-greater-element-ii/)
 
 ## 思路：
 在最基础的单调栈问题上加了个数组可循环
@@ -142,7 +142,7 @@
 
 
 
-[739. 每日温度](https://leetcode-cn.com/problems/daily-temperatures/)
+# [739. 每日温度](https://leetcode-cn.com/problems/daily-temperatures/)
 
 ## 思路：
 除了要找到后一个最大值，更重要的判断天数，但是单调栈是会把中间数给弹出去的，会出错
