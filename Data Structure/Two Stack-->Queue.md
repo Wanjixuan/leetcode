@@ -76,7 +76,7 @@ public void push(int x) {
 
 ![pop](https://github.com/Wanjixuan/leetcode/blob/main/Pic/Question/232-popPart.gif)
 
-<br/>
+
 ### isEmpty
 
 要看队列是否为空，只需要看两个栈里面还有没有元素！
