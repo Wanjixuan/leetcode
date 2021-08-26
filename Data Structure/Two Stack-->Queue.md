@@ -71,10 +71,9 @@ public void push(int x) {
 
 ![peek\push](https://github.com/Wanjixuan/leetcode/blob/main/Pic/Question/232-peek-push.gif)
 
-<br/>
-<br/>
-<br/>
+
 **pop:**
+
 ![pop](https://github.com/Wanjixuan/leetcode/blob/main/Pic/Question/232-popPart.gif)
 
 <br/>
