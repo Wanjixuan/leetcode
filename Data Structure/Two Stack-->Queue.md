@@ -76,6 +76,7 @@ public void push(int x) {
 <br/>
 **pop:**
 ![pop](https://github.com/Wanjixuan/leetcode/blob/main/Pic/Question/232-popPart.gif)
+
 <br/>
 ### isEmpty
 
