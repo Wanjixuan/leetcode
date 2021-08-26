@@ -66,12 +66,17 @@ public void push(int x) {
 
 操作如下图：
 
-push和peek():
+**push和peek():**
 **里面确认了S2是不是空，但是没截进去！**
 
 ![peek\push](https://github.com/Wanjixuan/leetcode/blob/main/Pic/Question/232-peek-push.gif)
-pop:
+
+<br/>
+<br/>
+<br/>
+**pop:**
 ![pop](https://github.com/Wanjixuan/leetcode/blob/main/Pic/Question/232-popPart.gif)
+<br/>
 ### isEmpty
 
 要看队列是否为空，只需要看两个栈里面还有没有元素！
